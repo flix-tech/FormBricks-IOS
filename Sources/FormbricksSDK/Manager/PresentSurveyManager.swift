@@ -25,7 +25,7 @@ final class PresentSurveyManager {
                     presentationController.detents = [.large()]
                 }
                 self.viewController = vc
-                window.rootViewController?.present(vc, animated: true, completion: nil)
+                window.topMostViewController()?.present(vc, animated: true, completion: nil)
             }
         }
     }

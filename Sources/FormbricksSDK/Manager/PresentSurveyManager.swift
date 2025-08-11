@@ -20,7 +20,7 @@ final class PresentSurveyManager {
                     let view = FormbricksView(viewModel: FormbricksViewModel(environmentResponse: environmentResponse, surveyId: id))
                 let vc = UIHostingController(rootView: view)
                 vc.modalPresentationStyle = .overCurrentContext
-                vc.view.backgroundColor = UIColor.gray.withAlphaComponent(0.6)
+                vc.view.backgroundColor = UIColor(red: 0x1E/255.0, green: 0x1E/255.0, blue: 0x1E/255.0, alpha: 0.2)
                 if let presentationController = vc.presentationController as? UISheetPresentationController {
                     presentationController.detents = [.large()]
                 }
